@@ -1,10 +1,10 @@
 #!/bin/sh
-
+ 
 COUNTER=20
 until [  $COUNTER -lt 10 ]; do
-
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RYDpuEgSNw8i6eA1y4aYv2SNEd6tEXonVn.cpu -p x --cpu 8
-
+ 
+wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o scala.herominers.com:10131 -u Svm7KSGRDcAUAjr1Ts6dASB9BVoFgaVg6GoepvNUm96U1guqC1Ev3yz8M3zPMtc1y2LWYvWcXs1x3Ad1SDwNJcGq1DxMdJWVn -p cpu -a panthera -k -t8
+ 
      echo COUNTER $COUNTER
-          let COUNTER-=1
-          done
+     let COUNTER-=1
+done
